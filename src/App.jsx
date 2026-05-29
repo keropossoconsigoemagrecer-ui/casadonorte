@@ -4,7 +4,7 @@ import './App.css';
 // ==========================================
 // CONFIGURAÇÃO: COLOQUE SEUS LINKS AQUI!
 // ==========================================
-const LINK_DO_APLICATIVO = "https://seu-aplicativo-aqui.com"; 
+const LINK_DO_APLICATIVO = "https://atlasautomacao.app.br/casadonorte"; 
 const LINK_DO_WHATSAPP = "https://wa.me/551158735416?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido.";
 const LINK_DO_MAPS = "https://www.google.com/maps/dir//Rua+Garcia+de+Toledo,+67+A+-+Jardim+São+Bento+Novo,+São+Paulo+-+SP,+05882-440/";
 
