@@ -4,8 +4,9 @@
   --cor-card: #f5eedc;        /* Areia Pastel */
   --cor-texto: #4a341e;       /* Marrom Cacau */
   --cor-detalhe: #ddcaa5;     /* Ouro Velho Suave */
-  --cor-whatsapp: #7ca982;    /* Verde Pastel Confortável */
-  --cor-app: #dcb265;         /* Amarelo Queimado */
+  --cor-whatsapp: #7ca982;    /* Verde Pastel Comercial */
+  --cor-app: #dcb265;         /* Amarelo Queimado App */
+  --cor-insta: #e09f9f;       /* Rosa Pastel para o Instagram */
 }
 
 * {
@@ -52,14 +53,15 @@ body {
 
 .botoes-navegacao {
   display: flex;
-  gap: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .btn-nav {
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   background-color: transparent;
   border: 1px solid var(--cor-texto);
@@ -81,6 +83,16 @@ body {
   background-color: #c79d52;
 }
 
+.btn-insta {
+  background-color: var(--cor-insta);
+  border-color: var(--cor-insta);
+  color: #fff !important;
+}
+
+.btn-insta:hover {
+  background-color: #c98484;
+}
+
 .btn-whats {
   background-color: var(--cor-whatsapp);
   border-color: var(--cor-whatsapp);
@@ -96,25 +108,25 @@ body {
   padding-top: 75px;
 }
 
-/* 2. BANNER PRINCIPAL / FACHADA */
+/* 2. BANNER PRINCIPAL */
 .banner-principal {
-  background-image: linear-gradient(rgba(74, 52, 30, 0.4), rgba(74, 52, 30, 0.7)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200');
+  background-image: linear-gradient(rgba(74, 52, 30, 0.35), rgba(74, 52, 30, 0.65)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200');
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 100px 20px;
+  padding: 90px 20px;
 }
 
 .banner-principal h1 {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 }
 
 .banner-principal p {
   color: var(--cor-card);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-style: italic;
 }
 
@@ -131,13 +143,13 @@ body {
   border-radius: 12px;
   display: flex;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
   flex-wrap: wrap;
 }
 
 .frango-imagem-container {
   flex: 1 1 400px;
-  min-height: 300px;
+  min-height: 280px;
 }
 
 .frango-imagem-container img {
@@ -148,7 +160,7 @@ body {
 
 .frango-info {
   flex: 1 1 400px;
-  padding: 40px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,18 +174,18 @@ body {
   font-size: 0.8rem;
   font-weight: bold;
   align-self: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 
 .frango-info h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
 }
 
 .aviso-reserva {
   font-weight: bold;
-  margin: 15px 0;
+  margin: 12px 0;
   color: #b83b3b;
 }
 
@@ -182,11 +194,11 @@ body {
   text-decoration: none;
   background-color: var(--cor-whatsapp);
   color: white !important;
-  padding: 12px 24px;
+  padding: 12px 22px;
   border-radius: 6px;
   font-weight: bold;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 8px;
   transition: background 0.2s;
 }
 
@@ -205,48 +217,48 @@ body {
   background-color: #fff;
   border: 2px dashed var(--cor-whatsapp);
   border-radius: 10px;
-  padding: 30px;
+  padding: 25px;
   text-align: center;
 }
 
 .caixa-delivery h3 {
-  margin-bottom: 20px;
-  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
 }
 
 .regras-grid {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 
 .regra-item {
-  flex: 1 1 250px;
-  padding: 10px;
+  flex: 1 1 240px;
+  padding: 8px;
 }
 
 .regra-item strong {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 /* 5. VITRINE DE PRODUTOS */
 .secao-produtos {
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 50px auto;
   padding: 0 20px;
 }
 
 .titulo-secao {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .titulo-secao h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
 }
 
 .titulo-secao p {
@@ -257,7 +269,7 @@ body {
 .produtos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 25px;
 }
 
 .card-produto {
@@ -266,59 +278,57 @@ body {
   border-radius: 8px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
 
 .card-produto img {
   width: 100%;
-  height: 200px;
+  height: 190px;
   object-fit: cover;
   border-radius: 6px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   border: 1px solid var(--cor-detalhe);
 }
 
 .card-produto h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
 }
 
 .card-produto p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.4;
   opacity: 0.9;
 }
 
-/* 6. HISTÓRIA */
+/* 6. SEÇÃO HISTÓRIA */
 .secao-historia {
   background-color: var(--cor-card);
   border-top: 1px solid var(--cor-detalhe);
   border-bottom: 1px solid var(--cor-detalhe);
-  padding: 60px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .historia-conteudo {
-  max-width: 800px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
 .historia-conteudo h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.historia-conteudo p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.6rem;
   margin-bottom: 15px;
 }
 
-/* 7. RODAPÉ CORRETOR */
+.historia-conteudo p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* 7. RODAPÉ */
 .rodape-site {
   background-color: #2c1e11;
-  padding: 40px 20px 20px 20px;
-  margin-top: 40px;
+  padding: 45px 20px 20px 20px;
 }
 
 .rodape-site *, .rodape-site strong {
@@ -331,25 +341,25 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
-  padding-bottom: 30px;
+  gap: 35px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #4a341e;
 }
 
 .rodape-bloco {
-  flex: 1 1 300px;
+  flex: 1 1 280px;
 }
 
 .rodape-bloco h3 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
   border-bottom: 2px solid var(--cor-app);
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 .rodape-bloco p {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   line-height: 1.5;
 }
 
@@ -357,10 +367,10 @@ body {
   display: inline-block;
   text-decoration: none;
   background-color: var(--cor-app);
-  padding: 10px 20px;
+  padding: 10px 18px;
   border-radius: 6px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 8px;
   transition: opacity 0.2s;
 }
 
@@ -371,20 +381,23 @@ body {
 .rodape-direitos {
   text-align: center;
   padding-top: 20px;
-  font-size: 0.85rem;
-  opacity: 0.6;
+  font-size: 0.8rem;
+  opacity: 0.5;
 }
 
-/* RESPONSIVIDADE PARA CELULARES */
+/* AJUSTES DE CELULAR */
 @media(max-width: 768px) {
+  .site-container {
+    padding-top: 110px; /* Dá espaço para os botões que quebram linha */
+  }
   .topo-conteudo {
     justify-content: center;
     text-align: center;
+    padding: 10px;
   }
   .botoes-navegacao {
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
   }
   .frango-info {
     padding: 20px;
