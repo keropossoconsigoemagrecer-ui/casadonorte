@@ -1,3 +1,4 @@
+import React from 'react'
 // ============================================
 // PROJETO: CASA DO NORTE TIA RITINHA
 // STACK: React + Tailwind + Vercel
