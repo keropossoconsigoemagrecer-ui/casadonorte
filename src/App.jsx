@@ -2,33 +2,6 @@
 // PROJETO: CASA DO NORTE TIA RITINHA
 // STACK: React + Tailwind + Vercel
 // ============================================
-//
-// ESTRUTURA DO PROJETO:
-//
-// /src
-//   /components
-//   /pages
-//   App.jsx
-//   main.jsx
-//
-// ARQUIVOS NECESSÁRIOS:
-//
-// package.json
-// vite.config.js
-// tailwind.config.js
-// postcss.config.js
-// index.html
-//
-// INSTALAÇÃO:
-// npm install
-// npm run dev
-//
-// BUILD:
-// npm run build
-//
-// DEPLOY:
-// conectar GitHub na Vercel
-// ============================================
 
 export default function CasaDoNorteSite() {
   const deliveryRules = {
@@ -45,14 +18,14 @@ export default function CasaDoNorteSite() {
 
   return (
     <div className="min-h-screen bg-[#f6f1e7] text-[#3b2a1f] font-sans">
-      {/* DELIVERY INFO BAR */
+      {/* DELIVERY INFO BAR */}
       <section className="bg-[#8b5e34] text-white py-4 px-6 text-center text-sm md:text-base font-medium">
         <p>
           🚚 Entrega grátis até 2km • Acima disso R$ 2,00 por km • Acima de 3km apenas pedidos acima de R$ 50 com entrega agendada.
         </p>
       </section>
 
-      /* HERO */}
+      {/* HERO */}
       <section className="relative bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center h-[90vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-black/55"></div>
 
@@ -69,6 +42,7 @@ export default function CasaDoNorteSite() {
             <a
               href="https://wa.me/5511999999999"
               target="_blank"
+              rel="noreferrer"
               className="bg-[#8b5e34] hover:bg-[#6d4725] text-white px-8 py-4 rounded-2xl text-lg font-semibold shadow-lg transition"
             >
               Pedir no WhatsApp
@@ -125,23 +99,19 @@ export default function CasaDoNorteSite() {
             {[
               {
                 nome: 'Queijos e Requeijão',
-                imagem:
-                  'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=1200&auto=format&fit=crop',
+                imagem: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=1200&auto=format&fit=crop',
               },
               {
                 nome: 'Castanhas e Frutas Secas',
-                imagem:
-                  'https://images.unsplash.com/photo-1515543904379-3d757afe72e3?q=80&w=1200&auto=format&fit=crop',
+                imagem: 'https://images.unsplash.com/photo-1515543904379-3d757afe72e3?q=80&w=1200&auto=format&fit=crop',
               },
               {
                 nome: 'Farinhas e Temperos',
-                imagem:
-                  'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop',
+                imagem: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop',
               },
               {
                 nome: 'Doces Nordestinos',
-                imagem:
-                  'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?q=80&w=1200&auto=format&fit=crop',
+                imagem: 'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?q=80&w=1200&auto=format&fit=crop',
               },
             ].map((item, index) => (
               <div
@@ -160,6 +130,7 @@ export default function CasaDoNorteSite() {
                   <a
                     href="https://wa.me/5511999999999"
                     target="_blank"
+                    rel="noreferrer"
                     className="inline-block mt-5 bg-[#8b5e34] text-white px-5 py-3 rounded-xl"
                   >
                     Consultar no WhatsApp
@@ -189,6 +160,7 @@ export default function CasaDoNorteSite() {
           <a
             href="https://wa.me/5511999999999"
             target="_blank"
+            rel="noreferrer"
             className="bg-[#8b5e34] text-white px-8 py-4 rounded-2xl text-lg font-semibold shadow-lg"
           >
             Faça sua reserva
@@ -243,6 +215,7 @@ export default function CasaDoNorteSite() {
             <a
               href="https://instagram.com/casadonortetiaritinha"
               target="_blank"
+              rel="noreferrer"
               className="bg-[#8b5e34] text-white px-6 py-3 rounded-2xl"
             >
               Instagram
@@ -251,6 +224,7 @@ export default function CasaDoNorteSite() {
             <a
               href="https://wa.me/5511999999999"
               target="_blank"
+              rel="noreferrer"
               className="bg-green-600 text-white px-6 py-3 rounded-2xl"
             >
               WhatsApp
@@ -261,7 +235,7 @@ export default function CasaDoNorteSite() {
         <div className="rounded-3xl overflow-hidden shadow-2xl h-[450px]">
           <iframe
             title="mapa"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8"
+            src="https://maps.google.com/maps?q=Sao%20Paulo&t=&z=13&ie=UTF-8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -284,6 +258,7 @@ export default function CasaDoNorteSite() {
           <a
             href="https://wa.me/5511999999999"
             target="_blank"
+            rel="noreferrer"
             className="inline-block bg-green-600 hover:bg-green-700 px-10 py-5 rounded-2xl text-xl font-semibold transition"
           >
             Chamar no WhatsApp
@@ -291,7 +266,7 @@ export default function CasaDoNorteSite() {
         </div>
       </section>
 
-      {/* ADMIN FEATURES PREVIEW */
+      {/* ADMIN FEATURES PREVIEW */}
       <section className="py-20 bg-[#f3ece1] px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
@@ -333,14 +308,12 @@ export default function CasaDoNorteSite() {
         </div>
       </section>
 
-      /* FOOTER */}
+      {/* FOOTER */}
       <footer className="bg-[#2a1d15] text-[#f1dfc0] py-8 text-center px-6">
-        <p>
-          © 2026 Casa do Norte Tia Ritinha • Todos os direitos reservados.
-        <div className="mt-4 text-sm text-\[#d6c1a0\]">
+        <p>© 2026 Casa do Norte Tia Ritinha • Todos os direitos reservados.</p>
+        <div className="mt-4 text-sm text-[#d6c1a0]">
           Delivery local inteligente com pedidos e reservas via WhatsApp.
         </div>
-        </p>
       </footer>
     </div>
   )
